@@ -1,0 +1,106 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Good day
+- intent: enroll
+  examples: |
+    - I want to enroll at the University of Zimbabwe
+    - How can I apply for admission?
+    - What are the requirements for enrollment?
+- intent: inquire_programs
+  examples: |
+    - What programs do you offer in business management sciences and economics?
+    - Tell me more about the faculty of business management sciences and economics
+    - Which courses can I take in business management sciences and economics?
+- intent: inquire_fees
+  examples: |
+    - How much are the fees for [business administration](program)?
+    - What is the cost of studying [economics](program) at the University of Zimbabwe?
+    - How do I pay for my [accounting](program) program?
+- intent: inquire_scholarships
+  examples: |
+    - Are there any scholarships available for [business management sciences](faculty)?
+    - How can I apply for a scholarship in [economics](faculty)?
+    - What are the criteria for getting a scholarship in [business administration](program)?
+- intent: inquire_accommodation
+  examples: |
+    - Do you have on-campus accommodation for students?
+    - Where can I find a place to stay near the university?
+    - How much is the rent for a room in [Harare](city)?
+- intent: inquire_transportation
+  examples: |
+    - How do I get to the university from [Bulawayo](city)?
+    - What are the best modes of transportation in [Harare](city)?
+    - Is there a bus service that goes to the university?
+- intent: inquire_facilities
+  examples: |
+    - What facilities do you have on campus?
+    - Do you have a library, a gym, and a cafeteria?
+    - How can I access the internet on campus?
+- intent: inquire_campus_life
+  examples: |
+    - How is the campus life at the University of Zimbabwe?
+    - What are some of the activities and events that happen on campus?
+    - How can I join a club or a society at the university?
+- intent: inquire_graduation
+  examples: |
+    - When is the graduation ceremony for [business administration](program) students?
+    - How do I apply for graduation?
+    - What are the requirements for graduation?
+- intent: inquire_alumni
+  examples: |
+    - Do you have an alumni network for [business management sciences](faculty) graduates?
+    - How can I connect with other alumni from [economics](faculty)?
+    - What are some of the benefits of being an alumni of the University of Zimbabwe?
+- intent: inquire_career
+  examples: |
+    - What are some of the career opportunities for [business administration](program) graduates?
+    - How can I get career guidance and support from the university?
+    - Do you have a career fair or a placement service for students?
+- intent: inquire_research
+  examples: |
+    - What are some of the research areas in [business management sciences](faculty) and [economics](faculty)?
+    - How can I get involved in research projects at the university?
+    - Do you have any research grants or funding opportunities for students?
+- intent: inquire_exchange
+  examples: |
+    - Do you have any exchange programs for [business management sciences](faculty) and [economics](faculty) students?
+    - How can I apply for an exchange program to study abroad?
+    - What are some of the partner universities that offer exchange programs?
+- intent: inquire_contact
+  examples: |
+    - How can I contact the faculty of business management sciences and economics?
+    - What is the email address and phone number of the faculty office?
+    - Who can I talk to if I have any questions or concerns about my program?
+- intent: affirm
+  examples: |
+    - Yes
+    - Sure
+    - Of course
+- intent: deny
+  examples: |
+    - No
+    - Not really
+- intent: thank
+  examples: |
+    - Thank you for your help
+    - I appreciate your assistance
+    - Thanks a lot
+- intent: bye
+  examples: |
+    - Goodbye
+    - See you later
+    - Have a nice day
+- intent: request_callback
+  examples: |
+    - Can you call me back later?
+    - I would like to talk to someone on the phone
+    - Please give me a call when you can
+- intent: provide_details
+  examples: |
+    - My name is [John](name) and I'm from [Bulawayo](city)
+    - I'm [Mary](name) and I'm interested in [accounting](program)
+    - I'm a [high school](level) student and I want to study [economics](program) at the University of Zimbabwe

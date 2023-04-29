@@ -1,0 +1,46 @@
+version: "3.0"
+rules:
+- rule: greet user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+# - rule: enroll user
+#   steps:
+#   - intent: enroll
+#   - action: enroll_form
+#   - active_loop: enroll_form
+
+# - rule: submit enrollment form
+#   condition:
+#   - active_loop: enroll_form
+#   steps:
+#   - action: enroll_form
+#   - active_loop: null
+#   - slot_was_set:
+#     - requested_slot: null
+#   - action: utter_thank
+
+- rule: inquire about programs
+  steps:
+  - intent: inquire_programs
+  - action: utter_inquire_programs
+
+- rule: inquire about fees
+  steps:
+  - intent: inquire_fees
+  - action: utter_inquire_fees
+
+# - rule: inquire about scholarships
+#   steps:
+#   - intent: inquire_scholarships
+#   - action: utter_inquire_scholarships
+
+# - rule: inquire about accommodation
+#   steps:
+#   - intent: inquire_accommodation
+#   - action: utter_inquire_accommodation
+
+# - rule: inquire about transportation
+#   steps:
+#   - intent: inquire_transportation

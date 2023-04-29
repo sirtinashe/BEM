@@ -1,0 +1,150 @@
+version: "3.1"
+
+session_config:
+  session_expiration_time: 60 # value in minutes, 0 means infinitely long sessions
+  carry_over_slots_to_new_session: true # set to false to forget slots between sessions
+
+intents:
+  - greet
+  - enroll
+  - inquire_programs
+  - inquire_fees
+  - inquire_scholarships
+  - inquire_accommodation
+  - inquire_transportation
+  - inquire_facilities
+  - inquire_campus_life
+  - inquire_graduation
+  - inquire_alumni
+  - inquire_career
+  - inquire_research
+  - inquire_exchange
+  - inquire_contact
+  - affirm
+  - deny
+  - thank
+  - bye
+  - request_callback
+  - provide_details
+
+entities:
+  - program
+  - faculty
+  - city
+  - name
+  - level
+
+slots:
+  program:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: program
+
+  faculty:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: faculty
+
+  city:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: city
+
+responses:
+  utter_greet:
+    - text: "Hello, welcome to the University of Zimbabwe. How can I help you?"
+
+  utter_enroll:
+    - text: "To enroll at the University of Zimbabwe, you need to meet the minimum entry requirements and submit an online application form. You can find more information on our website."
+
+  utter_inquire_programs:
+    - text: "The faculty of business management sciences and economics offers various programs at undergraduate and postgraduate levels. Some of the programs are business administration, accounting, economics, finance, marketing, and management."
+
+  utter_inquire_fees:
+    - text: "The fees for each program vary depending on the level and duration of study. You can check the fee structure on our website or contact the faculty office for more details."
+
+  utter_inquire_scholarships:
+    - text: "There are some scholarships available for students who excel academically or demonstrate financial need. You can apply for a scholarship through our online portal or contact the scholarship office for more information."
+
+  utter_inquire_accommodation:
+    - text: "The university has limited on-campus accommodation for students, which is allocated on a first-come first-served basis. You can also find off-campus accommodation options near the university or in the city center."
+
+  utter_inquire_transportation:
+    - text: "The university is located in Harare, the capital city of Zimbabwe. You can get to the university by bus, taxi, or car. The university also provides a shuttle service for students who live off-campus."
+
+  utter_inquire_facilities:
+    - text: "The university has various facilities on campus, such as a library, a gym, a cafeteria, a health center, and a computer lab. You can access the internet on campus using your student ID and password."
+
+  utter_inquire_campus_life:
+    - text: "The campus life at the University of Zimbabwe is vibrant and diverse. You can participate in various activities and events organized by the student union, clubs, and societies. You can also enjoy the cultural and natural attractions of Harare and its surroundings."
+
+  utter_inquire_graduation:
+    - text: "The graduation ceremony for each faculty is held once a year in December. You need to apply for graduation online and pay a graduation fee. You also need to complete all your academic requirements and clear any outstanding fees or charges."
+
+  utter_inquire_alumni:
+    - text: "The university has an alumni network for graduates who want to stay connected with their alma mater and fellow alumni. You can join the alumni network online or contact the alumni office for more details. Some of the benefits of being an alumni are access to career services, networking opportunities, and discounts on events and courses."
+
+  utter_inquire_career:
+    - text: "The university provides career guidance and support for students and graduates who want to pursue their professional goals. You can access career services online or visit the career center on campus. The university also hosts a career fair every year where you can meet potential employers and learn about job"
+  
+  utter_inquire_contact:
+    - text: "If you want to contact the University of Zimbabwe, you can call them at +263-4-303211 or email them at info@uz.ac.zw."
+    - text: "To get in touch with the University of Zimbabwe, you have the option of calling +263-4-303211 or sending an email to info@uz.ac.zw."
+    - text: "The University of Zimbabwe can be contacted by phone at +263-4-303211 or by email at info@uz.ac.zw."
+    - text: "You can reach the University of Zimbabwe by dialing +263-4-303211 or emailing info@uz.ac.zw."
+    - text: "The phone number and email address of the University of Zimbabwe are +263-4-303211 and info@uz.ac.zw respectively."
+    - text: "Call +263-4-303211 or email info@uz.ac.zw if you need to contact the University of Zimbabwe."
+  
+  utter_inquire_research:
+    - text: "You can browse the websites of different departments, faculties or institutes at the university and see what kind of research they are doing. You can also look for publications by professors or researchers in your field of interest and read their abstracts or summaries."
+  utter_inquire_exchange:
+    - text: "Talk to your academic advisor or study abroad office at your home university. They can help you find out if your university has any partnerships or agreements with the host universities you are interested in, and what kind of support or funding they can offer you. They can also advise you on how to transfer your credits and grades from abroad, and how to balance your academic plan with your exchange program."
+  
+  utter_thank:
+    - text: "You're very welcome. I'm glad I could help. 😊"
+
+  
+  
+
+  # actions:
+  # - utter_enroll
+  # - utter_greet
+  # - utter_inquire_programs
+  # - utter_inquire_fees
+  # - utter_inquire_scholarships
+  # - utter_inquire_accommodation
+  # - utter_inquire_transportation
+  # - utter_inquire_facilities
+  # - utter_inquire_campus_life
+  # - utter_inquire_graduation
+  # - utter_inquire_alumni
+  # - utter_inquire_career
+  # - utter_inquire_research
+  # - utter_inquire_exchange
+  # - utter_inquire_contact
+  # - utter_affirm
+  # - utter_deny
+  # - utter_thank
+  # - utter_bye
+  # - action_request_callback
+  # - action_provide_details
+
+# forms:
+#   enroll_form:
+#     required_slots:
+#       name:
+#         type: from_text
+#       program:
+#         type: from_entity
+#         entity: program
+#       level:
+#         type: from_entity
+#         entity: level
+
+

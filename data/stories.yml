@@ -1,0 +1,92 @@
+version: "3.0"
+stories:
+- story: greet 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  # - intent: enroll
+  # - action: enroll_form
+  # - active_loop: enroll_form
+
+# - story: provide details 
+#   steps:
+#   # - checkpoint: enrollment_submitted
+#   - intent: provide_details
+#   - action: action_provide_details
+ 
+
+- story: thank
+  steps:
+  # - checkpoint: enrollment_submitted
+  - intent: thank
+  - action: utter_thank
+
+
+- story: inquire about fees
+  steps:
+  - intent: inquire_fees
+  - action: utter_inquire_fees
+
+- story: inquire about programs 
+  steps:
+  - intent: inquire_programs
+  - action: utter_inquire_programs
+
+
+
+- story: inquire about accommodation
+  steps:
+  - intent: inquire_accommodation
+  - action: utter_inquire_accommodation
+
+- story: inquire about scholarships
+  steps:
+  - intent: inquire_scholarships
+  - action: utter_inquire_scholarships
+
+- story: inquire about facilities
+  steps:
+  - intent: inquire_facilities
+  - action: utter_inquire_facilities
+
+- story: inquire about transportation
+  steps:
+  - intent: inquire_transportation
+  - action: utter_inquire_transportation
+
+- story: inquire about campus life 
+  steps:
+  - intent: inquire_campus_life
+  - action: utter_inquire_campus_life
+
+
+- story: inquire about graduation
+  steps:
+  - intent: inquire_graduation
+  - action: utter_inquire_graduation
+
+- story: inquire about career
+  steps:
+  - intent: inquire_career
+  - action: utter_inquire_career
+
+- story: inquire about alumni 
+  steps:
+  - intent: inquire_alumni
+  - action: utter_inquire_alumni
+
+- story: inquire about exchange
+  steps:
+  - intent: inquire_exchange
+  - action: utter_inquire_exchange
+
+- story: inquire about research 
+  steps:
+  - intent: inquire_research
+  - action: utter_inquire_research
+
+
+- story: inquire about contact and request callback
+  steps:
+  - intent: inquire_contact
+  - action: utter_inquire_contact
