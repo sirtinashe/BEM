@@ -8,17 +8,17 @@ This chatbot assistant for the Business Enterprise Management (BEM) program at t
 
 To get started with the chatbot, you will need to clone the repository. You can do this by running the following command:
 
-git clone https://github.com/TinasheMashaya/BEM
+`git clone https://github.com/TinasheMashaya/BEM`
 
 Once you have cloned the repository, navigate to the BEM directory using the following command:
 
-cd BEM
+`cd BEM`
 
 ## Training the Chatbot
 
 To train the chatbot, run the following command:
 
-rasa train
+`rasa train`
 
 This will train the chatbot using the training data provided in the repository.
 
@@ -26,7 +26,7 @@ This will train the chatbot using the training data provided in the repository.
 
 To run the chatbot in interactive mode, run the following command:
 
-rasa run interactive --debug
+`rasa run interactive --debug`
 
 This will start the chatbot in interactive mode, allowing you to chat with it and test its functionality.
 
